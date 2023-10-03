@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 400px;
+      height: 100px;
+      position: absolute;
+      border: 1px solid #000;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    
+    .box::after{
+      content: "";
+      width: 400px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 50%;
+      bottom: 0;
+      margin: auto;
+      background-size: 20px 20px;
+      background-image: linear-gradient(90deg, transparent 98%, black 0%); 
+      background-repeat: repeat-x;
+    }
+    .box::before{
+      width: 180px;
+      height: 100px;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 220px;
+      right:0;
+      bottom: 0;
+      margin: auto;
+      background:linear-gradient(180deg,rgba(255,247,140,1) 10%, rgba(230,222,132,1) 50%, rgba(217,210,133,1) 64%, rgba(224,216,120,1) 70%, rgba(246,239,139,1) 84%, rgba(250,244,164,1) 100%);
+      
+    }
+
+    .box1{
+      width: 225px;
+      height: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+      .box1::after{
+      width: 45px;
+      height: 100px;
+      content: "";
+      position: absolute;
+      background: rgb(0, 0, 0); 
+      top: 0;
+      right:0;
+      bottom: 0;
+      margin: auto;
+    }
+    .box1::before{
+      width: 180px;
+      height: 100px;
+      content: "";
+      position: absolute;
+      background: rgb(243, 243, 243); 
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      background:linear-gradient(180deg,rgba(255,255,255,1) 0%, rgba(237,237,237,1) 32%, rgba(200,200,200,1) 64%, rgba(228,228,228,1) 78%, rgba(255,255,255,1) 100%);
+    }
+    .box2{
+      width: 540px;
+      height: 80px;
+      content: "";
+      position: absolute;
+      border: 1px solid #000; 
+      top: 0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 5px 5px 5px 5px;
+      background:linear-gradient(180deg,rgba(255,255,255,1) 0%, rgba(237,237,237,1) 32%, rgba(200,200,200,1) 64%, rgba(228,228,228,1) 78%, rgba(255,255,255,1) 100%);
+      
+    }
+      .box2::after{
+      width: 45px;
+      height: 100px;
+      content: "";
+      position: absolute;
+      border: 1px solid #000; 
+      top: 0;
+      left: -35px;
+      bottom: 0;
+      margin: auto;
+      border-radius: 5px 5px 5px 5px;
+      background:linear-gradient(180deg,rgba(255,255,255,1) 0%, rgba(237,237,237,1) 32%, rgba(200,200,200,1) 64%, rgba(228,228,228,1) 78%, rgba(255,255,255,1) 100%);
+    }
+    .box2::before{
+      width: 90px;
+      height:0;
+      content: "";
+      position: absolute;
+      border: 1px solid #868686; 
+      top: 0;
+      right: -92px;
+      bottom: 0;
+      margin: auto;
+    }
+    
+    p {
+      color:#acacac;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      right:0;
+      bottom: 0;
+      margin: auto;
+      
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box2">
+  <div class="box">
+    <div class="box1">
+      <p>Made in Taiwan</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
